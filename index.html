@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Open Source 要素</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <pre id="source">
+
+class: center, middle
+
+# Open Source 要素
+## [evanxd](http://github.com/evanxd)
+
+---
+
+class: middle
+
+# 大綱
+
+## [Open Source 組成的部分](index.html)
+## [Firefox OS](index.html)
+## [參與 Open Source 專案](index.html)
+
+---
+
+class: middle
+
+# 今天的目標
+
+* 認識 Open Source 的運作方式
+* 認識下一世代的行動作業系統
+* 開始動手做點什麼，去追尋身為資工人的熱情
+
+---
+
+## Open Source 開發者
+* [Firefox OS Gaia](https://github.com/mozilla-b2g/gaia)
+* [JS Marionette](https://github.com/mozilla-b2g/marionette-js-runner)
+* [2048 Monkey](http://evanxd.github.io/2048/#http://evanxd.github.io/2048-monkey/js/blind-monkey.js)
+([2048 BOT 大賽](http://2048-botcontest.twbbs.org/))
+* [Rangers Monkey](https://github.com/evanxd/rangers-monkey)
+* [Dorcas](http://evanxd.github.io/dorcas)
+
+## 幫助學生進入 Open Source 的開發
+* [Travis Reporter](https://github.com/evanxd/travis-reporter/)
+* [TSOC 2014](http://wmmks.csie.ncku.edu.tw/tsoc2014/project/MA18.html)
+
+---
+
+# 民調
+
+## 什麼是 Open Source？
+* 開放程式碼
+* 還有什麼...
+
+## 有多少人
+* 使用 Open Source 軟體
+* 貢獻 Open Source 軟體
+
+---
+
+# 為什麼要關心 Open Source
+
+## 改變這個世界
+* [Linux](http://www.linux.org), [Firefox](http://www.mozilla.org/firefox), [Android](http://source.android.com), [Firefox OS](http://www.mozilla.org/firefoxos)
+
+## 與全世界開源工作者協同工作
+* [GitHub](http://github.com)
+
+## 獲得工作的機會
+
+## 不用[搶](http://www.twhook.com/showthread.php?30019-COSCUP-2014%E5%B9%B4%E6%90%B6%E7%A5%A8%E5%86%8D%E5%BA%A6%E7%A7%92%E6%AE%BA)，就拿到 [COSCUP](http://coscup2014.kktix.cc/events/coscup2014-osc-vip) 的票
+
+
+---
+
+# Open Source 的定義 (1/2)
+
+* 自由再散布
+* 原始碼
+* 衍生著作
+* 原創作者程式原始碼的完整性
+* 不得對任何人或團體有差別待遇
+* 對程式在任何領域內的利用不得有差別待遇：可商業使用
+
+---
+
+# Open Source 的定義 (2/2)
+
+* 散布授權條款
+* 授權條款不得專屬於特定產品
+* 授權條款不得限制其他軟體
+* 授權條款必須技術（散佈媒介）中立
+
+## [Bruce Perens](http://en.wikipedia.org/wiki/Bruce_Perens)
+
+---
+
+class: middle
+
+# 所以 Open Source 軟體是：
+
+* 任何人可以自由地使用、改變和分享
+* 多人共同開發
+* 會宣告 licence 去保護其自由開放的權利
+
+---
+
+# Open Source 的要素 (1/3)
+
+## 創新
+* 解決某些特定的問題([visionmedia](https://github.com/visionmedia): [express](https://github.com/visionmedia/express), [mocha](https://github.com/visionmedia/mocha), [EJS](https://github.com/visionmedia/ejs))
+
+## 文化
+* 開放 – 什麼事情都可以改變，不過方案要好到讓大部份人同意（吵架？）
+* 版主文化 – [Module Owner/Peer](https://wiki.mozilla.org/Modules/All#JS_Marionette_Harness_and_Tools)
+* 自己擦屁股
+
+---
+
+# Open Source 的要素 (2/3)
+
+## 溝通
+* 公開分享資訊的平台 – [Wiki](https://wiki.mozilla.org/FirefoxOS/productivity)
+* 公開討論事情的平台 – [Mailing List](https://groups.google.com/forum/#!forum/mozilla.dev.gaia)
+* 公開即時通訊的平台 – [IRC](https://wiki.mozilla.org/IRC)
+
+---
+
+# Open Source 的要素 (3/3)
+
+## 軟體工程
+* Issue Tracker([Bugzilla](https://bugzilla.mozilla.org), [Issues](https://github.com/visionmedia/mocha/issues)) – 專案管理
+* 多人協同工作([GitHub](https://github.com/mozilla-b2g/gaia)) – 版本管理
+* [Code Review](https://github.com/mozilla-b2g/gaia/pull/19058) – 一致性、可維護的程式碼
+* [Continuous Integration](https://travis-ci.org/mozilla-b2g/gaia) – build software at every change
+
+---
+
+class: middle
+
+# 常遇到的問題
+* 不會 [Git](http://www-cs-students.stanford.edu/~blynn/gitmagic/intl/zh_tw/)！老師沒教，怪我囉。XD
+* Issue Tracker、Mailing List 和 GitHub 的溝通內容分不清楚？
+* 怎麼[開始](https://bugzilla.mozilla.org/buglist.cgi?list_id=10403931&resolution=---&classification=Client%20Software&classification=Components&classification=Server%20Software&classification=Other&classification=Graveyard&emailtype1=exact&status_whiteboard_type=allwordssubstr&query_format=advanced&emailassigned_to1=1&status_whiteboard=good%20first%20bug&bug_status=NEW&bug_status=ASSIGNED&bug_status=REOPENED&email1=nobody%40mozilla.org)貢獻一個 Open Source 專案？
+
+---
+
+class: center, middle
+
+# Firefox OS
+
+---
+
+![Browser Market Share](./images/browser-market-share.png)
+
+---
+
+class: center, middle
+
+# IE 市佔率達 90%↑ 後...
+
+---
+
+class: center, middle
+
+![Windows Crash](./images/ie-crash.png)
+
+---
+
+class: middle
+
+1. 壟斷市場，排除競爭者
+2. 缺乏競爭，進步緩慢
+3. 更新週期變長→安全漏洞
+
+---
+
+class: center, middle
+
+## 現在，行動網路爆發的時代
+
+---
+
+class: center, middle
+
+## 封閉造成的問題
+## 還是沒有消失…
+
+---
+
+class: middle
+
+# 案例
+* 2012 年 12 月 – 知名推薦軟體 AppShopper 遭 Apple 下架
+* 2013 年 04 月 – 熱門推薦軟體 AppGratis 被 Apple 下架
+
+---
+
+class: middle
+
+## Mozilla 決定以
+## “開放精神與 Open Web”
+## 發展 Mobile Web 的標準
+## 解決封閉與獨佔
+## 造成的問題
+
+---
+
+class: center, middle
+
+# Firefox OS 誕生了
+
+![Windows Crash](./images/firefox-os-phone.png)
+
+---
+
+class: center, middle
+
+## 那什麼是 Firefox OS？
+
+---
+
+class: center, middle
+
+## 是火狐狸的旁白嗎？XD
+
+---
+
+class: center, middle
+
+## 以 “Web 標準”為核心的
+## 作業系統
+
+---
+
+class: center, middle
+
+## Firefox OS ＋ 手機 ＝ ？
+
+---
+
+class: center, middle
+
+## 智慧型手機
+## (Smartphone)
+
+---
+
+class: center, middle
+
+## 啥？
+## 跟 iOS 、Android
+## 有什麼不同…
+
+---
+
+class: center, middle
+
+1. Web
+2. 開放
+3. 平價
+
+---
+
+class: middle
+
+# Web 標準
+## 擁抱網路標準，App 可以運行在任何的裝置
+
+---
+
+class: middle
+
+# 開放精神
+## 任何人可以自由地用它來創新
+
+---
+
+class: center, middle
+
+# 平價
+## 25 美元
+
+---
+
+class: center, middle
+
+![Windows Crash](./images/firefox-os-homescreen.png)
+
+---
+
+class: center, middle
+
+![Windows Crash](./images/firefox-os-features.png)
+
+---
+
+class: center, middle
+
+![Windows Crash](./images/firefox-os-architecture.png)
+
+---
+
+class: middle
+
+# 貢獻 [Gaia](https://github.com/mozilla-b2g/gaia) 專案的準備
+* Bugzilla 的帳號
+* GitHub 的帳號
+* Git
+* Web 技術
+
+---
+
+class: center, middle
+
+# LIVE DEMO
+
+## 如何貢獻 Firefire OS Gaia
+
+---
+
+# Steve Jobs：
+### 我想，大多數有創造力的人都不忘感謝前人的努力。
+### 我們無法像巴步狄倫那樣寫歌，也不能像史塔博那樣會寫劇本。
+### 我們只能就自己僅有的才能去發揮，去表達我們深刻的感覺，貢獻一點東西出來，以感謝前人的付出。
+### 這就是我的動力。
+
+---
+
+class: center, middle
+
+# Q & A
+
+  </pre>
+  <script src="http://gnab.github.io/remark/downloads/remark-0.5.7.min.js"></script>
+  <script type="text/javascript">
+    var slideshow = remark.create();
+  </script>
+</body>
+</html>
